@@ -37,6 +37,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 // BODY PARSER MIDDLEWARE - PARSER FORM DATA TO JSON SO WE CAN USE IT
 app.use(bodyParser.json());
 
+//PASSPORT MIDDLEWARE
+app.use(passport.initialize());
+app.use(passport.session());
+
+require('./config/passport')(passport);
+
 //  USER ROUTES - routes after '/' have to go before '/' 
 app.use('/users', users);
 
