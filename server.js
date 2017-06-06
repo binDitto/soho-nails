@@ -13,13 +13,28 @@ const app = express();
 
 const users = require('./routes/users');
 
+// CONNECT THE DATABASE
+const config = require('./config/database');
+
+mongoose.connect(config.database);
+mongoose.connection.on('connected', () => {
+    console.log('Connected to database ' + config.database);
+});
+mongoose.connection.on('error', (error) => {
+    console.log('Database error: ' + error);
+});
+
+
 // PORT
 const port = 3000;
 
 // CORS MIDDLEWARE - allows making request to api from different domain name || CHECK DOCUMENTATION FOR MORE INFO
 app.use(cors());
 
-// BODY PARER MIDDLEWARE - PARSER FORM DATA TO JSON SO WE CAN USE IT
+// SET STATIC FOLDER 
+app.use(express.static(path.join(__dirname, 'public')));
+
+// BODY PARSER MIDDLEWARE - PARSER FORM DATA TO JSON SO WE CAN USE IT
 app.use(bodyParser.json());
 
 //  USER ROUTES - routes after '/' have to go before '/' 
