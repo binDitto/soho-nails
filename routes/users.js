@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const passport = require('passport');
 const jwt = require('jsonwebtoken');
-
+const config = require('../config/database');
 const User = require('../models/user');
 
 // User Registration - no need to add /users/register because this file is already associated with /users path
@@ -25,7 +25,7 @@ router.post('/register', (req, res, next) => {
 });
 
 // USER AUTHENTICATION
-router.get('/authenticate', (req, res, next) => {
+router.post('/authenticate', (req, res, next) => {
     const username = req.body.username;
     const password = req.body.password;
 
@@ -60,8 +60,9 @@ router.get('/authenticate', (req, res, next) => {
 });
 
 // USER PROFILE
-router.get('/profile', (req, res, next) => {
-    res.send('PROFILE');
+    // route protected with 2nd arg
+router.get('/profile', passport.authenticate('jwt', {session:false}), (req, res, next) => {
+    res.json({user: req.user});
 });
 
 module.exports = router;

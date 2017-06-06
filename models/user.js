@@ -45,3 +45,11 @@ module.exports.addUser = function(newUser, callback){
         });
     });
 }
+
+// IN ROUTES USERS /AUTHENTICATION - function comparePassword created below
+module.exports.comparePassword = function (candidatePassword, hash, callback){
+    bcrypt.compare(candidatePassword, hash, (err, isMatch) => {
+        if(err) throw err;
+        callback(null, isMatch);
+    });
+}
