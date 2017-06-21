@@ -52,6 +52,9 @@ app.get('/', (req, res) => {
     res.send('Invalid Endpoint');
 });
 
+app.get ('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/index.html'));
+});
 
 // RUN SERVER, type npm start in terminal because "start" in package.json set to run this file, OR TYPE NODEMON TO DO THIS AUTOMATICALLY
 app.listen(port, () => {
