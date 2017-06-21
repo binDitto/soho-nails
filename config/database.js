@@ -1,4 +1,4 @@
 module.exports = {
-    database: 'mongodb://bin:Oitroi@ds133932.mlab.com:33932/heroku_fh1xsgdj' 
+    database: 'mongodb://Bin:Oitroi@ds051838.mlab.com:51838/soho-nails' 
     secret: 'sohosecret'
 }
