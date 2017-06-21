@@ -26,7 +26,7 @@ mongoose.connection.on('error', (error) => {
 
 
 // PORT
-const port = 3000;
+const port = process.env.PORT || 8080; //To work with HEROKU
 
 // CORS MIDDLEWARE - allows making request to api from different domain name || CHECK DOCUMENTATION FOR MORE INFO
 app.use(cors());
