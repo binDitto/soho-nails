@@ -12,6 +12,7 @@ const mongoose = require('mongoose');
 const app = express();
 
 const users = require('./routes/users');
+const services = require('./routes/services');
 
 // CONNECT THE DATABASE
 const config = require('./config/database');
@@ -45,6 +46,9 @@ require('./config/passport')(passport);
 
 //  USER ROUTES - routes after '/' have to go before '/' 
 app.use('/users', users);
+
+// SERVICE ROUTES
+app.use('/services', services);
 
 // INDEX ROUTE
 app.get('/', (req, res) => {
