@@ -10,7 +10,7 @@ export class AuthService {
   user: any;
 
   constructor(private http: Http) { }
-
+// prefix urls with http://localhost:8080/ during dev mode to save fetch from database
   registerUser(user){
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
