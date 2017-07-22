@@ -1,0 +1,10 @@
+.bg {
+  background-image: url("../../../assets/images/mani.jpeg");
+  color: white;
+  background-color:lightgray;
+    background-blend-mode:multiply;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:50%;
+    background-attachment:fixed;
+}

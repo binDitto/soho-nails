@@ -628,7 +628,7 @@ module.exports = ""
 /***/ 677:
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = ".bg {\n  background-image: url(\"../../../assets/images/mani.jpeg\");\n  color: white;\n  background-color:lightgray;\n    background-blend-mode:multiply;\n    background-repeat:no-repeat;\n    background-size:cover;\n    background-position:50%;\n    background-attachment:fixed;\n}\n"
 
 /***/ }),
 
@@ -684,7 +684,7 @@ module.exports = "<h2 class=\"page-header\">Dashboard</h2>\n<p>Welcome to your d
 /***/ 685:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"jumbotron text-center\">\n  <h1>SOHO Nails & Spa in Kerman, CA</h1>\n  <p class=\"lead\">\n    OPENING IN AUGUST 2017 <br/>\n    Don't waste your energy on that drive, now you can have your nails done right here at home in Kerman.\n  </p>\n  <div>\n    <a href=\"\" class=\"btn btn-primary\" [routerLink]=\"['/register']\">Register</a>\n    <a href=\"\" class=\"btn btn-primary btn-success\" [routerLink]=\"['/login']\">Log In</a>\n  </div>\n</div>\n\n<hr>\n\n<div class=\"row\">\n  <div class=\"col-md-4\">\n    <h3>Mani/Pedis</h3>\n    <p>Enjoy a refreshing Pedicure and Manicure after a long day's work.</p>\n  </div>\n  <div class=\"col-md-4\">\n    <h3>Artificial Nails</h3>\n    <p>If you want beautiful artistic sets of nails, come on in. Our techs will provide you nails with personality.</p>\n  </div>\n  <div class=\"col-md-4\">\n    <h3>Waxing</h3>\n    <p>We'll help you clean out those unwanted hairs for a clean, refined look that'll make you confident.</p>\n  </div>\n</div>\n\n<hr>\n"
+module.exports = "<div class=\"jumbotron text-center bg\">\n  <h1>SOHO Nails & Spa</h1>\n  <h4>OPENING IN KERMAN, CA\n    <br/>\n    AUGUST 2017</h4>\n  <p class=\"lead\">\n\n    Have your nails done right here at home in Kerman.</p>\n  <div>\n    <a href=\"\" class=\"btn btn-primary\" [routerLink]=\"['/register']\">Register</a>\n    <a href=\"\" class=\"btn btn-primary btn-success\" [routerLink]=\"['/login']\">Log In</a>\n  </div>\n</div>\n\n<hr>\n\n<div class=\"row\">\n  <div class=\"col-md-4\">\n    <h3>Mani/Pedis</h3>\n    <p>Enjoy a refreshing Pedicure and Manicure after a long day's work.</p>\n  </div>\n  <div class=\"col-md-4\">\n    <h3>Artificial Nails</h3>\n    <p>If you want beautiful artistic sets of nails, come on in. Our techs will provide you nails with personality.</p>\n  </div>\n  <div class=\"col-md-4\">\n    <h3>Waxing</h3>\n    <p>We'll help you clean out those unwanted hairs for a clean, refined look that'll make you confident.</p>\n  </div>\n</div>\n\n<hr>\n"
 
 /***/ }),
 
