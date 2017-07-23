@@ -628,7 +628,7 @@ module.exports = ""
 /***/ 677:
 /***/ (function(module, exports) {
 
-module.exports = ".bg {\n  background-image: url(\"../../../assets/images/mani.jpeg\");\n  color: white;\n  background-color:lightgray;\n    background-blend-mode:multiply;\n    background-repeat:no-repeat;\n    background-size:cover;\n    background-position:50%;\n    background-attachment:fixed;\n}\n"
+module.exports = ".bg {\n  color: white;\n  background: none;\n}\n\n.bg-2 {\n  text-align: center;\n  color: darkgray;\n  background: white;\n}\n.bg-2 > .row {\n  margin: 0px auto;\n  max-width: 1400px;\n\n}\n\n.ht {\n\ndisplay: -webkit-box;\n\ndisplay: -ms-flexbox;\n\ndisplay: flex;\n-webkit-box-orient: vertical;\n-webkit-box-direction: normal;\n    -ms-flex-direction: column;\n        flex-direction: column;\n-webkit-box-pack: center;\n    -ms-flex-pack: center;\n        justify-content: center;\n /* resize: vertical; */\noverflow: auto;\nheight: 200px;\n}\n.ht p {\n  margin: 0;\n  padding: 10px;\n}\n.landing {\n   background-image: url(\"../../assets/images/mani.jpeg\");\n\n    background-blend-mode:multiply;\n    background-repeat:no-repeat;\n    background-size:cover;\n    background-position:50%;\n\n}\n"
 
 /***/ }),
 
@@ -642,7 +642,7 @@ module.exports = ""
 /***/ 679:
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = ".navbar {\n  border-radius: 0px;\n}\n"
 
 /***/ }),
 
@@ -670,7 +670,7 @@ module.exports = ""
 /***/ 683:
 /***/ (function(module, exports) {
 
-module.exports = "<app-navbar></app-navbar>\n\n<div class=\"container\">\n  <flash-messages></flash-messages>\n  <router-outlet></router-outlet> <!-- This to showcase the different pages aka components -->\n</div>\n"
+module.exports = "<app-navbar></app-navbar>\n\n\n  <flash-messages></flash-messages>\n  <router-outlet></router-outlet> <!-- This to showcase the different pages aka components -->\n\n"
 
 /***/ }),
 
@@ -684,21 +684,21 @@ module.exports = "<h2 class=\"page-header\">Dashboard</h2>\n<p>Welcome to your d
 /***/ 685:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"jumbotron text-center bg\">\n  <h1>SOHO Nails & Spa</h1>\n  <h4>OPENING IN KERMAN, CA\n    <br/>\n    AUGUST 2017</h4>\n  <p class=\"lead\">\n\n    Have your nails done right here at home in Kerman.</p>\n  <div>\n    <a href=\"\" class=\"btn btn-primary\" [routerLink]=\"['/register']\">Register</a>\n    <a href=\"\" class=\"btn btn-primary btn-success\" [routerLink]=\"['/login']\">Log In</a>\n  </div>\n</div>\n\n<hr>\n\n<div class=\"row\">\n  <div class=\"col-md-4\">\n    <h3>Mani/Pedis</h3>\n    <p>Enjoy a refreshing Pedicure and Manicure after a long day's work.</p>\n  </div>\n  <div class=\"col-md-4\">\n    <h3>Artificial Nails</h3>\n    <p>If you want beautiful artistic sets of nails, come on in. Our techs will provide you nails with personality.</p>\n  </div>\n  <div class=\"col-md-4\">\n    <h3>Waxing</h3>\n    <p>We'll help you clean out those unwanted hairs for a clean, refined look that'll make you confident.</p>\n  </div>\n</div>\n\n<hr>\n"
+module.exports = "<div class=\"container-fluid landing\">\n  <div class=\"jumbotron text-center bg\">\n    <h1>SOHO Nails & Spa</h1>\n    <h4>OPENING IN KERMAN, CA\n      <br/>\n      AUGUST 2017</h4>\n    <p class=\"lead\">\n\n      Have your nails done right here at home in Kerman.</p>\n    <div>\n      <a href=\"\" class=\"btn btn-primary\" [routerLink]=\"['/register']\">Register</a>\n      <a href=\"\" class=\"btn btn-primary btn-success\" [routerLink]=\"['/login']\">Log In</a>\n    </div>\n  </div>\n</div>\n\n\n<div class=\"container-fluid bg-2\">\n  <div class=\"row\">\n  <div class=\"col-md-4 col-sm-8 col-xs-12 h\">\n  <div class=\"ht\">\n    <h3>Mani/Pedis</h3>\n    <p>Enjoy a refreshing Pedicure and Manicure after a long day's work.</p>\n  </div>\n  </div>\n\n  <div class=\"col-md-4 col-sm-8 col-xs-12 h\">\n    <div class=\"ht\">\n<h3>Artificial Nails</h3>\n    <p>If you want beautiful artistic sets of nails, come on in. Our techs will provide you nails with personality.</p>\n  </div>\n  </div>\n\n  <div class=\"col-md-4 col-sm-8 col-xs-12 h\">\n    <div class=\"ht\">\n<h3>Waxing</h3>\n    <p>We'll help you clean out those unwanted hairs for a clean, refined look that'll make you confident.</p>\n  </div>\n\n  </div>\n\n  </div>\n\n</div>\n\n"
 
 /***/ }),
 
 /***/ 686:
 /***/ (function(module, exports) {
 
-module.exports = "<h2 class=\"page-header\">Login</h2>\n<form (submit)=\"onLoginSubmit()\">\n  <div class=\"form-group\">\n    <label for=\"\">Username</label>\n    <input type=\"text\" class=\"form-control\" [(ngModel)]=\"username\" name=\"username\">\n  </div>\n  <div class=\"form-group\">\n    <label for=\"\">Password</label>\n    <input type=\"password\" class=\"form-control\" [(ngModel)]=\"password\" name=\"password\">\n  </div>\n  <input type=\"submit\" class=\"btn btn-primary\" value=\"login\">\n</form>\n"
+module.exports = "\n\n<div class=\"container\">\n  <div class=\"col-md-6 col-md-offset-3\">\n    <h2 class=\"page-header\">Login</h2>\n    <form (submit)=\"onLoginSubmit()\">\n      <div class=\"form-group\">\n        <label for=\"\">Username</label>\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"username\" name=\"username\">\n      </div>\n      <div class=\"form-group\">\n        <label for=\"\">Password</label>\n        <input type=\"password\" class=\"form-control\" [(ngModel)]=\"password\" name=\"password\">\n      </div>\n      <input type=\"submit\" class=\"btn btn-primary\" value=\"login\">\n    </form>\n  </div>\n</div>\n"
 
 /***/ }),
 
 /***/ 687:
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-default\">\n  <div class=\"container-fluid\">\n    <!-- Brand and toggle get grouped for better mobile display -->\n    <div class=\"navbar-header\">\n      <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n        <span class=\"sr-only\">Toggle navigation</span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n      </button>\n      <a class=\"navbar-brand\" href=\"#\">SOHO Nails & Spa </a>\n    </div>\n\n    <!-- Collect the nav links, forms, and other content for toggling -->\n    <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n      <ul class=\"nav navbar-nav navbar-left\">\n        <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\" ><a [routerLink]=\"['/']\">Home</a></li>\n        <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\" ><a [routerLink]=\"['/services']\">Services</a></li>\n        <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\" ><a [routerLink]=\"['/']\">Announcements</a></li>\n        <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\" ><a [routerLink]=\"['/']\">Contact</a></li>\n      </ul>\n\n      <ul class=\"nav navbar-nav navbar-right\">\n        <li *ngIf=\"authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\" ><a [routerLink]=\"['/dashboard']\">Dashboard</a></li>\n        <li *ngIf=\"authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\" ><a [routerLink]=\"['/profile']\">Profile</a></li>\n        <li *ngIf=\"authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\" ><a href=\"#\" (click)=\"onLogoutClick()\">Logout</a></li>\n\n        <li *ngIf=\"!authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\" ><a [routerLink]=\"['/login']\">Login</a></li>\n        <li *ngIf=\"!authService.loggedIn()\"><a [routerLink]=\"['/register']\">Register</a></li>\n      </ul>\n\n    </div><!-- /.navbar-collapse -->\n  </div><!-- /.container-fluid -->\n</nav>\n"
+module.exports = "<nav class=\"navbar navbar-inverse\">\n  <div class=\"container-fluid\">\n    <!-- Brand and toggle get grouped for better mobile display -->\n    <div class=\"navbar-header\">\n      <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n        <span class=\"sr-only\">Toggle navigation</span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n      </button>\n      <a class=\"navbar-brand\" href=\"#\">SOHO Nails & Spa </a>\n    </div>\n\n    <!-- Collect the nav links, forms, and other content for toggling -->\n    <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n      <ul class=\"nav navbar-nav navbar-left\">\n        <li routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact:true}\"><a [routerLink]=\"['/']\">Home</a></li>\n        <li routerLinkActive=\"active\" ><a [routerLink]=\"['/services']\">Services</a></li>\n        <!-- <li routerLinkActive=\"active\" ><a [routerLink]=\"['/announcements']\">Announcements</a></li>\n        <li routerLinkActive=\"active\" ><a [routerLink]=\"['/contact']\">Contact</a></li> -->\n      </ul>\n\n      <ul class=\"nav navbar-nav navbar-right\">\n        <li *ngIf=\"authService.loggedIn()\" routerLinkActive=\"active\"  ><a [routerLink]=\"['/dashboard']\">Dashboard</a></li>\n        <li *ngIf=\"authService.loggedIn()\" routerLinkActive=\"active\"  ><a [routerLink]=\"['/profile']\">Profile</a></li>\n        <li *ngIf=\"authService.loggedIn()\" routerLinkActive=\"active\"  ><a href=\"#\" (click)=\"onLogoutClick()\">Logout</a></li>\n\n        <li *ngIf=\"!authService.loggedIn()\" routerLinkActive=\"active\"  ><a [routerLink]=\"['/login']\">Login</a></li>\n        <li *ngIf=\"!authService.loggedIn()\" routerLinkActive=\"active\"><a [routerLink]=\"['/register']\">Register</a></li>\n      </ul>\n\n    </div><!-- /.navbar-collapse -->\n  </div><!-- /.container-fluid -->\n</nav>\n"
 
 /***/ }),
 
@@ -759,6 +759,7 @@ var AuthService = (function () {
     function AuthService(http) {
         this.http = http;
     }
+    // prefix urls with http://localhost:8080/ during dev mode to save fetch from database
     AuthService.prototype.registerUser = function (user) {
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["Headers"]();
         headers.append('Content-Type', 'application/json');

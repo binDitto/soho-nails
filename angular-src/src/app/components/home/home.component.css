@@ -1,10 +1,38 @@
 .bg {
-  background-image: url("../../../assets/images/mani.jpeg");
   color: white;
-  background-color:lightgray;
+  background: none;
+}
+
+.bg-2 {
+  text-align: center;
+  color: darkgray;
+  background: white;
+}
+.bg-2 > .row {
+  margin: 0px auto;
+  max-width: 1400px;
+
+}
+
+.ht {
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+ /* resize: vertical; */
+overflow: auto;
+height: 200px;
+}
+.ht p {
+  margin: 0;
+  padding: 10px;
+}
+.landing {
+   background-image: url("../../assets/images/mani.jpeg");
+
     background-blend-mode:multiply;
     background-repeat:no-repeat;
     background-size:cover;
     background-position:50%;
-    background-attachment:fixed;
+
 }
